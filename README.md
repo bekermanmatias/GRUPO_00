@@ -1,2 +1,4 @@
-# Aplicacion1
-Proyecto app moviles
+# TRABAJOS PRACTICOS - GRUPO 00
+
+
+APLICACIONES MOVILES
