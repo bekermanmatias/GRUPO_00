@@ -1,0 +1,45 @@
+# Android Studio
+*.iml
+.idea/
+.gradle/
+local.properties
+.DS_Store
+Thumbs.db
+captures/
+output.json
+
+# Build outputs
+/build/
+**/build/
+.cxx/
+.externalNativeBuild/
+
+# Jetpack Compose previews
+.idea/assetWizardSettings.xml
+.idea/kotlinLanguageSettings.xml
+.idea/previews.xml
+
+# Crash logs
+hs_err_pid*
+replay_pid*
+
+# Signing keys
+*.jks
+*.keystore
+
+# Kotlin plugin data
+.kotlin/
+
+# Log files
+*.log
+
+# Compiled classes and archives
+*.class
+*.jar
+*.war
+*.ear
+*.apk
+*.ap_
+
+# Gradle wrapper
+!gradle/wrapper/gradle-wrapper.jar

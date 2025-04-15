@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewWelcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/llWelcomeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Saludo -->
+        <TextView
+            android:id="@+id/tvWelcomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a la aplicación"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Selección de plataforma -->
+        <TextView
+            android:id="@+id/tvEligePlataforma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elige tu plataforma:"
+            android:textColor="@color/text_black" />
+
+        <RadioGroup
+            android:id="@+id/rgPlataformas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android" />
+
+            <RadioButton
+                android:id="@+id/rbIOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IOS" />
+
+        </RadioGroup>
+
+        <!-- Imagen del logo -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_android"
+            android:visibility="gone" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Opción de selección de preferencias (simplificada) -->
+        <TextView
+            android:id="@+id/tvPreferencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tus preferencias:"
+            android:textColor="@color/text_black" />
+
+        <!-- Aquí se puede incluir un grupo de CheckBoxes o un ListView según se requiera -->
+        <!-- Por ejemplo, 3 CheckBox de ejemplo -->
+        <CheckBox
+            android:id="@+id/cbPreferencia1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programación" />
+
+        <CheckBox
+            android:id="@+id/cbPreferencia2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redes" />
+
+        <CheckBox
+            android:id="@+id/cbPreferencia3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seguridad" />
+
+    </LinearLayout>
+</ScrollView>
